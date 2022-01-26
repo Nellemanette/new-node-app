@@ -10,6 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'echo "banane"'
+                bat 'Docker --version'
             }
         }
     }
