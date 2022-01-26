@@ -13,5 +13,11 @@ pipeline {
                 bat 'Docker --version'
             }
         }
+        stage('Docker Build') {
+            agent any
+            steps {
+                sh 'docker build -t new-node-app:latest .'
+            }
+        }
     }
 }
