@@ -17,7 +17,7 @@ pipeline {
             agent any
             steps {
                 bat 'docker build -t local/app:latest .'
-                bat 'docker run -p 3310:3310 local/app:latest'
+                bat 'docker run -p 3500:3500 local/app:latest'
             }
         }
     }
